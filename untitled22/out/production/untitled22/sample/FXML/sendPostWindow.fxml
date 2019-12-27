@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="600.0" maxWidth="1000.0" minHeight="600.0" minWidth="1000.0" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #f7d461;" stylesheets="@tab.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SendPostController">
+    <children>
+        <Pane layoutX="-2.0" prefHeight="98.0" prefWidth="1008.0" style="-fx-background-color: #2A3030;">
+            <children>
+                <Text fx:id="welcome_text" fill="WHITE" layoutX="367.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Обьявление" wrappingWidth="274.9264831542969">
+                    <font>
+                        <Font size="46.0" />
+                    </font>
+                </Text>
+                <Button fx:id="back" layoutX="24.0" layoutY="30.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="68.0" style="-fx-background-color: #2a81dd;" text="&lt;--" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+            <MenuButton fx:id="menuButton" layoutX="868.0" layoutY="29.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="96.0" style="-fx-background-color: #2a81dd; -fx-border-color: #FFFFFF; -fx-border-radius: 5px;" text="Меню" textFill="WHITE">
+               <items>
+                  <MenuItem fx:id="profile" mnemonicParsing="false" text="Профиль" />
+                  <MenuItem fx:id="exit" mnemonicParsing="false" text="Выйти" />
+               </items>
+            </MenuButton>
+            </children>
+        </Pane>
+      <Button fx:id="car_type" layoutX="331.0" layoutY="134.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="118.0" style="-fx-background-color: #2a81dd;" text="Машина" textFill="WHITE" />
+      <Button fx:id="zapchasti_type" layoutX="481.0" layoutY="134.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="106.0" style="-fx-background-color: #2a81dd;" text="Запчасти" textFill="WHITE" />
+      <Button fx:id="remont_type" layoutX="625.0" layoutY="134.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="145.0" style="-fx-background-color: #2a81dd;" text="Ремонт и услуги" textFill="WHITE" />
+      <Text layoutX="62.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выберите тип обьявления :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="model_car_field" layoutX="186.0" layoutY="196.0" prefHeight="39.0" prefWidth="178.0" promptText="Модель.." style="-fx-border-color: #2a81dd;" />
+      <TextField fx:id="year_car_field" layoutX="186.0" layoutY="260.0" prefHeight="39.0" prefWidth="178.0" promptText="Год..." style="-fx-border-color: #2a81dd;" />
+      <TextField fx:id="city_car_field" layoutX="185.0" layoutY="329.0" prefHeight="39.0" prefWidth="178.0" promptText="Город..." style="-fx-border-color: #2a81dd;" />
+      <TextField fx:id="price_car_field" layoutX="595.0" layoutY="196.0" prefHeight="39.0" prefWidth="178.0" promptText="Цена..." style="-fx-border-color: #2a81dd;" />
+      <TextField fx:id="phone_car_field" layoutX="595.0" layoutY="260.0" prefHeight="39.0" prefWidth="178.0" promptText="Телефон..." style="-fx-border-color: #2a81dd;" />
+      <Button fx:id="car_button" layoutX="416.0" layoutY="533.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="130.0" style="-fx-background-color: #2a81dd;" text="Отправить" textFill="WHITE" />
+      <TextField fx:id="type_zapchasti_field" layoutX="186.0" layoutY="196.0" prefHeight="39.0" prefWidth="178.0" promptText="Тип..." style="-fx-border-color: #2a81dd;" />
+      <TextArea fx:id="car_comment" layoutX="187.0" layoutY="402.0" prefHeight="98.0" prefWidth="587.0" promptText="Добавьте комментарий к машине..." style="-fx-border-color: #2a81dd;" />
+      <TextField fx:id="year_zapchasti_field" layoutX="186.0" layoutY="329.0" prefHeight="39.0" prefWidth="178.0" promptText="Год..." style="-fx-border-color: #2a81dd;" />
+      <TextField fx:id="city_zapchasti_field" layoutX="595.0" layoutY="196.0" prefHeight="39.0" prefWidth="178.0" promptText="Город..." style="-fx-border-color: #2a81dd;" />
+      <TextField fx:id="car_zapchasti_field" layoutX="185.0" layoutY="260.0" prefHeight="39.0" prefWidth="178.0" promptText="Запчасть от какой машины.." style="-fx-border-color: #2a81dd;" />
+      <TextField fx:id="price_zapchasti_field" layoutX="595.0" layoutY="260.0" prefHeight="39.0" prefWidth="178.0" promptText="Цена..." style="-fx-border-color: #2a81dd;" />
+      <TextField fx:id="phone_zapchasti_field" layoutX="595.0" layoutY="329.0" prefHeight="39.0" prefWidth="178.0" promptText="Телефон..." style="-fx-border-color: #2a81dd;" />
+      <TextArea fx:id="zapchasti_comment" layoutX="187.0" layoutY="402.0" prefHeight="98.0" prefWidth="587.0" promptText="Добавьте комментарий об запчасти..." style="-fx-border-color: #2a81dd;" />
+      <Button fx:id="zapchasti_button" layoutX="416.0" layoutY="533.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="130.0" style="-fx-background-color: #2a81dd;" text="Отправить" textFill="WHITE" />
+      <TextArea fx:id="remont_comment" layoutX="185.0" layoutY="329.0" prefHeight="170.0" prefWidth="587.0" promptText="Дополнительная информация об услуге или ремонту..." style="-fx-border-color: #2a81dd;" />
+      <Button fx:id="remonti_button" layoutX="415.0" layoutY="533.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="130.0" style="-fx-background-color: #2a81dd;" text="Отправить" textFill="WHITE" />
+      <TextField fx:id="remont_type_field" layoutX="185.0" layoutY="196.0" prefHeight="39.0" prefWidth="275.0" promptText="Тип услуги или ремонта...." style="-fx-border-color: #2a81dd;" />
+      <TextField fx:id="city_remont_field" layoutX="185.0" layoutY="260.0" prefHeight="39.0" prefWidth="178.0" promptText="Город..." style="-fx-border-color: #2a81dd;" />
+      <TextField fx:id="price_remont_field" layoutX="390.0" layoutY="260.0" prefHeight="39.0" prefWidth="178.0" promptText="Цена..." style="-fx-border-color: #2a81dd;" />
+      <TextField fx:id="phone_remont_field" layoutX="595.0" layoutY="260.0" prefHeight="39.0" prefWidth="178.0" promptText="Телефон..." style="-fx-border-color: #2a81dd;" />
+    </children>
+</AnchorPane>

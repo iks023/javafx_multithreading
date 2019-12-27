@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="600.0" maxWidth="1000.0" minHeight="600.0" minWidth="1000.0" prefHeight="600.0" prefWidth="1000.0" stylesheets="@tab.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminPanelController">
+    <children>
+        <Pane layoutX="-2.0" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #25242E;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Text fill="WHITE" layoutX="67.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Колеса">
+                    <font>
+                        <Font size="45.0" />
+                    </font>
+                </Text>
+                <Text fx:id="welcome_text" fill="WHITE" layoutX="366.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добро Пожаловать Админ" wrappingWidth="342.92633056640625">
+                    <font>
+                        <Font size="27.0" />
+                    </font>
+                </Text>
+                <Button fx:id="exit" layoutX="841.0" layoutY="24.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: #2a81dd;" text="Выход" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+      <TabPane layoutY="83.0" prefHeight="518.0" prefWidth="1000.0" style="-fx-background-color: #f7d461;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab fx:id="acc_column" text="Aккаунты">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #f7d461;">
+                     <children>
+                        <Button fx:id="remove_button" layoutX="19.0" layoutY="158.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="92.0" style="-fx-background-color: #2a81dd;" text="Удалить" textFill="WHITE" />
+                        <Text layoutX="44.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id" wrappingWidth="42.93670654296875">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="id_field" layoutX="87.0" layoutY="79.0" prefHeight="52.0" prefWidth="186.0" promptText="Введите id аккаунта" />
+                        <Button fx:id="update_button" layoutX="129.0" layoutY="158.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="102.0" text="Изменить" />
+                        <Button fx:id="search_button" layoutX="262.0" layoutY="158.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="102.0" text="Искать" />
+                        <Button fx:id="add_admin" layoutX="91.0" layoutY="406.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="178.0" text="Добавить Админа" />
+                        <TextArea fx:id="all_users" layoutX="386.0" layoutY="26.0" prefHeight="430.0" prefWidth="588.0" />
+                        <TextField fx:id="login_admin" layoutX="84.0" layoutY="270.0" prefHeight="45.0" prefWidth="191.0" promptText="Логин админа" />
+                        <TextField fx:id="password_admin" layoutX="84.0" layoutY="332.0" prefHeight="45.0" prefWidth="192.0" promptText="Пароль админа" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="Машины">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="car_text" layoutX="375.0" layoutY="40.0" prefHeight="410.0" prefWidth="586.0" />
+                        <TextField fx:id="id_car" layoutX="64.0" layoutY="90.0" prefHeight="50.0" prefWidth="218.0" promptText="id поста" />
+                        <Text layoutX="84.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Удалить пост">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="delete_car" layoutX="119.0" layoutY="156.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="109.0" text="Удалить" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Запчасти">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="zapchasti_text" layoutX="368.0" layoutY="38.0" prefHeight="411.0" prefWidth="586.0" />
+                        <Button fx:id="zapchasti_delete" layoutX="123.0" layoutY="157.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="106.0" text="Удалить" />
+                        <TextField fx:id="delete_post_zapchasti" layoutX="67.0" layoutY="92.0" prefHeight="50.0" prefWidth="218.0" promptText="id поста" />
+                        <Text layoutX="87.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Удалить пост">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Услуги">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="remont_text" layoutX="378.0" layoutY="39.0" prefHeight="410.0" prefWidth="590.0" />
+                        <Text layoutX="87.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Удалить пост" wrappingWidth="192.2492218017578">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="delete_remont" layoutX="123.0" layoutY="165.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="120.0" text="Удалить" />
+                        <TextField fx:id="id_remont" layoutX="74.0" layoutY="100.0" prefHeight="50.0" prefWidth="218.0" promptText="id поста" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+    </children>
+</AnchorPane>

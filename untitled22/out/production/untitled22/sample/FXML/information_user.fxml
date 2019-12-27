@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="600.0" maxWidth="1000.0" minHeight="513.0" minWidth="737.0" prefHeight="513.0" prefWidth="737.0" style="-fx-background-color: #f7d461;" stylesheets="@tab.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.information_page_Controller">
+    <children>
+        <Pane layoutX="-2.0" prefHeight="91.0" prefWidth="745.0" style="-fx-background-color: #2A3030;">
+            <children>
+                <Text fx:id="welcome_text" fill="WHITE" layoutX="314.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Профиль">
+                    <font>
+                        <Font size="26.0" />
+                    </font>
+                </Text>
+                <Button fx:id="back" layoutX="32.0" layoutY="26.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="66.0" style="-fx-background-color: #2a81dd;" text="&lt;--" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <Text layoutX="232.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Логин:" wrappingWidth="58.136688232421875">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="228.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя:" wrappingWidth="66.13668823242188">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="228.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Город:" wrappingWidth="66.13668823242188">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="107.0" fitWidth="109.0" layoutX="77.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/login_icon.png" />
+            </image>
+        </ImageView>
+        <Text layoutX="222.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фамилие:" wrappingWidth="79.73678588867188">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="228.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пароль:" wrappingWidth="87.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Separator layoutX="228.0" layoutY="171.0" prefHeight="3.0" prefWidth="434.0" style="-fx-background-color: #00000;" />
+        <Separator layoutX="228.0" layoutY="227.0" prefHeight="3.0" prefWidth="434.0" style="-fx-background-color: #00000;" />
+        <Separator layoutX="228.0" layoutY="288.0" prefHeight="3.0" prefWidth="434.0" style="-fx-background-color: #00000;" />
+      <Separator layoutX="228.0" layoutY="354.0" prefHeight="3.0" prefWidth="434.0" style="-fx-background-color: #00000;" />
+      <Separator layoutX="228.0" layoutY="416.0" prefHeight="3.0" prefWidth="434.0" style="-fx-background-color: #00000;" />
+      <Text fx:id="login_text_line" layoutX="315.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="275.2000427246094" />
+      <Text fx:id="password_line" layoutX="341.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="275.20004272460915" />
+      <Text fx:id="name_line" layoutX="315.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="275.20004272460903" />
+      <Text fx:id="surname_line" layoutX="315.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="275.2000427246089" />
+      <Text fx:id="city_line" layoutX="294.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="275.2000427246089" />
+      <Text layoutX="228.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Роль:" wrappingWidth="44.536712646484375">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Separator layoutX="228.0" layoutY="480.0" prefHeight="3.0" prefWidth="434.0" style="-fx-background-color: #00000;" />
+      <Text fx:id="role_line" layoutX="290.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="275.2000427246089" />
+    </children>
+</AnchorPane>
